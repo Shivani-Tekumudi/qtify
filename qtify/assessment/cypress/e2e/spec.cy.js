@@ -1,7 +1,7 @@
 describe("Buildout Qtify v2", () => {
     beforeEach(() => {
-      cy.visit("https://example.com/");
-      // cy.visit("https://example.com/");
+      cy.visit("https://qtify-9a9o-git-main-shivani-tekumudis-projects.vercel.app/");
+      // cy.visit("https://qtify-9a9o-git-main-shivani-tekumudis-projects.vercel.app/");
     });
     describe("Navbar", () => {
     it("Should contain logo, search bar, and a button", () => {
@@ -197,6 +197,7 @@ describe("Buildout Qtify v2", () => {
   
           // After checking all top albums, assert the count
           cy.wrap(topAlbumElements).should("have.length", topAlbums.length);
+          console.log(topAlbums.length)
         });
   
         // Check new albums
