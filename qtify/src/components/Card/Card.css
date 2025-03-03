@@ -35,3 +35,17 @@ text-align: left !important;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
 }
+.swiper-button-prev {
+    background-image: url("../../assets/left-arrow.svg") !important;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+  }
+  
+  .swiper-button-next {
+    background-image: url("../../assets/right-arrow.svg") !important;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    display: none !important;
+  }

@@ -737,7 +737,7 @@ let data =
     },]
 
 export default function Card(cardele){
-console.log(cardele)
+// console.log(cardele)
   
 
     return(
@@ -745,7 +745,7 @@ console.log(cardele)
         <div className="card">
            
                 <img className="card-img-top" src={cardele.cardele.image} alt="dd" height="170px"  width="159px"/>
-{console.log(cardele.cardele.image,"-------")}
+{/* {console.log(cardele.cardele.image,"-------")} */}
            
         <div className="card-body text-left">
         <Chip label={`${cardele.cardele.follows} Follows` } variant="outlined" className="badges" />
