@@ -9,14 +9,24 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './Card.css'
 
-export default function Carousel({ api}){
+export default function Carousel({ api , selectedval}){
   const [cardList, setCardList] = useState([]);
-  console.log("api is-------------", api)
+  
+
+  // console.log("api is-------------", api)
     const fetchCardList= async ()=>{
         try{
         let data= await axios.get(api);
-        console.log(data);
+        // console.log(data);
+        let finallist=data.data;
+        if(selectedval){
+// console.log("selected value???????????????????",selectedval )
+const fiteredList = finallist.filter((ele)=> ele.genre.key.includes(selectedval));
+setCardList(fiteredList);
+        }
+        else{
         setCardList(data.data)
+        }
         }
         catch(error){
             console.log(error)
@@ -63,6 +73,7 @@ cardList.map((cardele)=>{
        </SwiperSlide>)
 })
  : ""}
+
         
       </Swiper>
   

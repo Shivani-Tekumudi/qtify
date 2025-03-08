@@ -12,14 +12,16 @@ const Cards =  () =>{
     const [isCollapsed, setisCollapsed] = useState("collapse");
 
 
+
 return(
     <>
     
   
 
-    <Section sectionTitle="Top Albums" api="https://qtify-backend-labs.crio.do/albums/top" />
+    <Section sectionTitle="Top Albums" api="https://qtify-backend-labs.crio.do/albums/top" hascollapse/>
 
-    <Section sectionTitle="New Albums" api="https://qtify-backend-labs.crio.do/albums/new" />
+    <Section sectionTitle="New Albums" api="https://qtify-backend-labs.crio.do/albums/new" hascollapse />
+    <Section sectionTitle="Songs" api="https://qtify-backend-labs.crio.do/songs" hasFilter/>
     </>
 )
 

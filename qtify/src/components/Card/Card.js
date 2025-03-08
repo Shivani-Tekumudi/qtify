@@ -748,6 +748,7 @@ export default function Card(cardele){
 {/* {console.log(cardele.cardele.image,"-------")} */}
            
         <div className="card-body text-left">
+            
         <Chip label={`${cardele.cardele.follows} Follows` } variant="outlined" className="badges" />
             </div>
 
